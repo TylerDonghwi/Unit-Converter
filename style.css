@@ -1,0 +1,14 @@
+h1 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.converter {
+    margin: 0.5rem 0 0.5rem 0;
+}
