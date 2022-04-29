@@ -1,6 +1,9 @@
+* {
+    font-family: 'Bebas Neue', cursive;
+}
+
 h1 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin: 3rem 0 3rem 0;
     text-align: center;
 }
 
