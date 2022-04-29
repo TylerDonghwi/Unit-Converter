@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 1rem 0;
     text-align: center;
 }
 
@@ -28,4 +28,11 @@ h2 {
 
 .converter {
     margin: 0.5rem 0 0.5rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
