@@ -1,5 +1,6 @@
 * {
     font-family: 'Bebas Neue', cursive;
+    background-color: antiquewhite;
 }
 
 a:visited {
@@ -12,6 +13,11 @@ a:link {
 
 h1 {
     margin: 3rem 0 3rem 0;
+    text-align: center;
+}
+
+h2 {
+    margin: 2rem 0 2rem 0;
     text-align: center;
 }
 
