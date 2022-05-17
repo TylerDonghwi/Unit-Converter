@@ -42,6 +42,7 @@ form {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .input {
@@ -66,6 +67,13 @@ form {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    height: 3rem;
-    margin: auto;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-block {
+    padding: 10px 0 10px 10px;
 }
