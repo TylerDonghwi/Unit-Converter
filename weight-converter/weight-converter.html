@@ -32,13 +32,26 @@
         <a href="weight-converter.html">
             <h2>Weight Converter</h2>
         </a>
-        <input type="number" placeholder="Enter pounds">
+        <div class="initial-input">
+            <label for="initUnit">From: </label>
+            <input id="kilograms" type="radio" name="initUnit">
+            <label for="kilograms">Kilograms</label>
+            <input id="pounds" type="radio" name="initUnit">
+            <label for="pounds">Pounds</label>
+            <input id="Ounce" type="radio" name="initUnit">
+            <label for="Ounce">Ounce</label><br>
+        </div>
+        <div class="inputs">
+            <input class="input" type="number" placeholder="Enter values">
+            <button id="submitBtn">Submit</button>
+        </div>
+
     </form>
     <div id="output">
         <div class="card">
             <div class="card-block">
-                <h4>Grams:</h4>
-                <div id="gramsOutput"></div>
+                <h4>Pounds:</h4>
+                <div id="poundOutput"></div>
             </div>
         </div>
         <div class="card">
@@ -54,6 +67,8 @@
             </div>
         </div>
     </div>
+
+    <script src="weight-convert.js"></script>
 </body>
 
 </html>

@@ -37,6 +37,32 @@ form {
     align-items: center;
 }
 
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input {
+    height: 25px;
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+    display: inline-block;
+}
+
+#submitBtn {
+    height: 59px;
+    width: 60px;
+    transition: background-color, box-shadow, 0.15s;
+}
+
+#submitBtn:focus {
+    background-color: rgb(226, 210, 192);
+    box-shadow: 1px 1px 2px gray;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
