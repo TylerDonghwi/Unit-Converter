@@ -7,22 +7,42 @@ document.getElementById("submitBtn").onclick = function() {
     let ounce = document.getElementById("ounce").checked
     let input = document.getElementById("input").value
 
+    document.getElementById("gramOutput").innerHTML = ""
+    document.getElementById("poundOutput").innerHTML = ""
+    document.getElementById("ozOutput").innerHTML = ""
+
     if (grams) {
-        document.getElementById("gramOutput").innerHTML += input;
+        document.getElementById("gramOutput").innerHTML = input;
+        document.getElementById("poundOutput").innerHTML = fromGramToPound(input);
+        document.getElementById("ozOutput").innerHTML = fromGramToOunce(input);
     } else if (pounds) {
-        document.getElementById("poundOutput").innerHTML += input;
+        document.getElementById("gramOutput").innerHTML = fromPoundsToGram(input);
+        document.getElementById("poundOutput").innerHTML = input;
+        document.getElementById("ozOutput").innerHTML = fromGramToOunce(fromPoundsToGram(input));
     } else if (ounce) {
-        document.getElementById("ozOutput").innerHTML += input;
+        document.getElementById("gramOutput").innerHTML = fromOunceToGram(input);
+        document.getElementById("poundOutput").innerHTML = fromGramToPound(fromOunceToGram(input));
+        document.getElementById("ozOutput").innerHTML = input;
     } else {
         alert("Please choose what unit you're converting from")
     }
+
+    return false;
 }
 
 // two functions returns any values into kg
-function fromPoundsToKg(input) {
+function fromPoundsToGram(input) {
     return gramsInPound * input;
 }
 
-function fromOunceToKg(input) {
+function fromOunceToGram(input) {
     return gramsInOunce * input;
+}
+
+function fromGramToPound(input) {
+    return input / gramsInPound;
+}
+
+function fromGramToOunce(input) {
+    return input / gramsInOunce;
 }
