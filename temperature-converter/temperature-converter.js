@@ -6,12 +6,17 @@ document.getElementById("submitBtn").onclick = function() {
     document.getElementById("celsius-output").innerHTML = ""
     document.getElementById("fahrenheit-output").innerHTML = ""
 
+    if (!input) {
+        input = 0;
+    }
+
     if (celsius) {
-        document.getElementById("celsius-output").innerHTML = `${input.toFixed(2)}`
-            // .toLocaleString(undefined, { style: "unit: celsius" })
-            // document.getElementById("fahrenheit-output").innerHTML = celciusToFahrenheit(input).toLocaleString(undefined, { style: "unit: fahrenheit" })
+        document.getElementById("celsius-output").innerHTML = `${Math.round(input)}°C`
+        document.getElementById("fahrenheit-output").innerHTML = `${Math.round(celsiusToFahrenheit(input))}°F`
     } else if (fahrenheit) {
 
+        document.getElementById("celsius-output").innerHTML = `${Math.round(fahrenheitToCelsius(input))}°C`
+        document.getElementById("fahrenheit-output").innerHTML = `${Math.round(input)}°F`
     } else {
         alert("Please choose what unit you're converting from")
     }
@@ -19,6 +24,10 @@ document.getElementById("submitBtn").onclick = function() {
     return false;
 }
 
-function celciusToFahrenheit(input) {
+function celsiusToFahrenheit(input) {
     return input * 9 / 5 + 32
+}
+
+function fahrenheitToCelsius(input) {
+    return (input - 32) * 5 / 9
 }
