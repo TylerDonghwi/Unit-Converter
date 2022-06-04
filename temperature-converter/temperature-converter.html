@@ -28,6 +28,37 @@
         <a href="../time-converter/time-converter.html" class="converter">Time Converter</a>
     </div>
     <hr>
+
+    <form>
+        <a href="temperature-converter.html">
+            <h2>Temperature Converter</h2>
+        </a>
+        <div class="initial-input">
+            <label for="initUnit">From: </label>
+            <input id="celsius" type="radio" name="initUnit">
+            <label for="celsius">Celsius</label>
+            <input id="fahrenheit" type="radio" name="initUnit">
+            <label for="fahrenheit">Fahrenheit</label>
+        </div>
+        <div class="inputs">
+            <input id="input" type="number" placeholder="Enter a value">
+            <button id="submitBtn">Submit</button>
+        </div>
+
+    </form>
+    <div id="output">
+        <div class="card">
+            <h4 class="card-block">Celcius:</h4>
+            <h4 id="celsius-output"></h4>
+        </div>
+        <div class="card">
+            <h4 class="card-block">Fahrenheit:</h4>
+            <h4 id="fahrenheit-output"></h4>
+        </div>
+    </div>
+    </div>
+
+    <script src="temperature-converter.js"></script>
 </body>
 
 </html>
