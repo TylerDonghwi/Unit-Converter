@@ -1,7 +1,4 @@
 # Unit-Converter
 
-Length
-Weight
-Temperature
-Speed
-Time
+Simple JavaScript Project<br>
+Used HTML, CSS and JavaScript knowledge to create a unit converter project.
