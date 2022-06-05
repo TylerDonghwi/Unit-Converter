@@ -8,26 +8,26 @@ document.getElementById("submitBtn").onclick = function() {
     let input = document.getElementById("input").value
 
     if (!input) {
-        input = 0.00;
+        input = 0;
     }
 
-
+    console.log(input)
     document.getElementById("gramOutput").innerHTML = ""
     document.getElementById("poundOutput").innerHTML = ""
     document.getElementById("ozOutput").innerHTML = ""
 
     if (grams) {
-        document.getElementById("gramOutput").innerHTML = `${input.toFixed(2)} g`;
+        document.getElementById("gramOutput").innerHTML = `${Math.round(input).toFixed(2)} g`;
         document.getElementById("poundOutput").innerHTML = `${fromGramToPound(input).toFixed(2)} lb`;
         document.getElementById("ozOutput").innerHTML = `${fromGramToOunce(input).toFixed(2)} oz`;
     } else if (pounds) {
         document.getElementById("gramOutput").innerHTML = `${fromPoundsToGram(input).toFixed(2)} g`;
-        document.getElementById("poundOutput").innerHTML = `${input.toFixed(2)} lb`;
+        document.getElementById("poundOutput").innerHTML = `${Math.round(input).toFixed(2)} lb`;
         document.getElementById("ozOutput").innerHTML = `${fromGramToOunce(fromPoundsToGram(input)).toFixed(2)} oz`;
     } else if (ounce) {
         document.getElementById("gramOutput").innerHTML = `${fromOunceToGram(input).toFixed(2)} g`;
         document.getElementById("poundOutput").innerHTML = `${fromGramToPound(fromOunceToGram(input)).toFixed(2)} lb`;
-        document.getElementById("ozOutput").innerHTML = `${input.toFixed(2)} oz`;
+        document.getElementById("ozOutput").innerHTML = `${Math.round(input).toFixed(2)} oz`;
     } else {
         alert("Please choose what unit you're converting from")
     }
