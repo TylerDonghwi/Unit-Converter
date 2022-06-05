@@ -28,6 +28,48 @@
         <a href="../time-converter/time-converter.html" class="converter">Time Converter</a>
     </div>
     <hr>
+
+    <form>
+        <a href="time-converter.html">
+            <h2>Time Converter</h2>
+        </a>
+        <div class="box-for-dropdown">
+            <div class="option-input dropdown">
+                <button onclick="dropdown1()" class="dropbtn">From</button>
+                <div id="Dropdown1" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <div class="option-output dropdown">
+                <button onclick="dropdown2()" class="dropbtn">To</button>
+                <div id="Dropdown2" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="inputs">
+            <input id="input" type="number" placeholder="Enter a value">
+            <button id="submitBtn">Submit</button>
+        </div>
+
+    </form>
+    <div id="output">
+        <div class="card">
+            <h4 class="card-block">Ouput:</h4>
+            <h4 id="output"></h4>
+        </div>
+    </div>
+    </div>
+
+    <script src="time-converter.js"></script>
+
 </body>
 
 </html>
