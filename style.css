@@ -121,15 +121,17 @@ form {
     z-index: 1;
 }
 
-.dropdown-content1 a,
-.dropdown-content2 a {
+.dropdown-content1 button,
+.dropdown-content2 button {
     color: black;
-    padding: 12px 16px;
+    width: 100%;
+    padding: 8px 16px;
     text-decoration: none;
     display: block;
+    border: none;
 }
 
-.dropdown-content1 a:hover,
-.dropdown-content2 a:hover {
+.dropdown-content1 button:hover,
+.dropdown-content2 button:hover {
     background-color: rgb(226, 210, 192);
 }
