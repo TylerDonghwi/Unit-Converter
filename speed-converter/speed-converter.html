@@ -28,6 +28,43 @@
         <a href="../time-converter/time-converter.html" class="converter">Time Converter</a>
     </div>
     <hr>
+
+    <form>
+        <a href="speed-converter.html">
+            <h2>Speed Converter</h2>
+        </a>
+        <div class="initial-input">
+            <label for="initUnit">From: </label>
+            <input id="m/s" type="radio" name="initUnit">
+            <label for="m/s">m/s</label>
+            <input id="km/h" type="radio" name="initUnit">
+            <label for="km/h">km/h</label>
+            <input id="mph" type="radio" name="initUnit">
+            <label for="mph">mph</label><br>
+        </div>
+        <div class="inputs">
+            <input id="input" type="number" placeholder="Enter a value">
+            <button id="submitBtn">Submit</button>
+        </div>
+
+    </form>
+    <div id="output">
+        <div class="card">
+            <h4 class="card-block">m/s:</h4>
+            <h4 id="m/sOutput"></h4>
+        </div>
+        <div class="card">
+            <h4 class="card-block">km/h:</h4>
+            <h4 id="km/hOutput"></h4>
+        </div>
+        <div class="card">
+            <h4 class="card-block">mph:</h4>
+            <h4 id="mphOutput"></h4>
+        </div>
+    </div>
+    </div>
+
+    <script src="speed-convert.js"></script>
 </body>
 
 </html>
