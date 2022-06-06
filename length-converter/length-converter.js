@@ -5,6 +5,7 @@ const inchInMill = 25.4
 const footInMill = 304.8
 const yardInMill = 914.4
 const mileInMill = 1609344
+const inchesInFoot = 12
 
 document.getElementById("submitBtn").onclick = function() {
     let select1 = document.getElementById("inputUnit")
@@ -21,7 +22,13 @@ document.getElementById("submitBtn").onclick = function() {
         }
         let inputInMill = inputToMill(inputUnit, input)
         let output = outputCalc(outputUnit, inputInMill)
-        document.getElementById("outputText").innerHTML = `${output.toFixed(2)} ${unitString(outputUnit)}`
+        if (outputUnit === "feet") {
+            let outputString = feetAndInches(output);
+            document.getElementById("outputText").innerHTML = `${outputString} ${unitString(outputUnit)}`
+        } else {
+            document.getElementById("outputText").innerHTML = `${output.toFixed(2)} ${unitString(outputUnit)}`
+        }
+
     }
 
     return false;
@@ -88,4 +95,8 @@ function unitString(unit) {
         case "miles":
             return "mi"
     }
+}
+
+function feetAndInches(output) {
+    return `${Math.floor(output)}'${Math.round((output - Math.floor(output)) * inchesInFoot)}`
 }
