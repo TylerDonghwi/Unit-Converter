@@ -11,7 +11,6 @@ document.getElementById("submitBtn").onclick = function() {
         input = 0;
     }
 
-    console.log(input)
     document.getElementById("gramOutput").innerHTML = ""
     document.getElementById("poundOutput").innerHTML = ""
     document.getElementById("ozOutput").innerHTML = ""
