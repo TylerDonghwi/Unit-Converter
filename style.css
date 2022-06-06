@@ -116,7 +116,6 @@ form {
 .dropdown-content2 {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
     min-width: 134.4px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -132,5 +131,5 @@ form {
 
 .dropdown-content1 a:hover,
 .dropdown-content2 a:hover {
-    background-color: #ddd
+    background-color: rgb(226, 210, 192);
 }

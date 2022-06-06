@@ -1,5 +1,5 @@
 function dropdown1() {
-    if (document.querySelector('.dropdown-content1').style.display === 'block') {
+    if (document.querySelector('.dropdown-content1').style.display === "block") {
         document.querySelector('.dropdown-content1').style.display = 'none'
     } else {
         document.querySelector('.dropdown-content1').style.display = 'block'
