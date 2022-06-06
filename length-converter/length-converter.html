@@ -28,6 +28,53 @@
         <a href="../time-converter/time-converter.html" class="converter">Time Converter</a>
     </div>
     <hr>
+
+
+    <form>
+        <a href="length-converter.html">
+            <h2>length Converter</h2>
+        </a>
+
+        <div class="box-for-dropdown">
+            <select id="inputUnit">
+                <option value="" disabled selected>From: </option>
+                <option value="millimetres">Millimetres</option>
+                <option value="centimetres">Centimetres</option>
+                <option value="metres">Metres</option>
+                <option value="kilometres">kilometres</option>
+                <option value="inches">inches</option>
+                <option value="feet">feet</option>
+                <option value="yards">Yards</option>
+                <option value="miles">Miles</option>
+            </select>
+            <select id="outputUnit">
+                <option value="" disabled selected>From: </option>
+                <option value="millimetres">Millimetres</option>
+                <option value="centimetres">Centimetres</option>
+                <option value="metres">Metres</option>
+                <option value="kilometres">kilometres</option>
+                <option value="inches">inches</option>
+                <option value="feet">feet</option>
+                <option value="yards">Yards</option>
+                <option value="miles">Miles</option>
+            </select>
+        </div>
+        <div class="inputs">
+            <input id="input" type="number" placeholder="Enter a value">
+            <button id="submitBtn">Submit</button>
+        </div>
+
+    </form>
+    <div id="output">
+        <div class="card">
+            <h4 class="card-block">Ouput:</h4>
+            <h4 id="outputText"></h4>
+        </div>
+    </div>
+    </div>
+
+    <script src="length-converter.js"></script>
+
 </body>
 
 </html>
