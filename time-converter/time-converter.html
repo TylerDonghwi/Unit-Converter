@@ -36,29 +36,24 @@
         </a>
 
         <div class="box-for-dropdown">
-            <div class="option-input dropdown">
-                <button onclick="dropdown1()" class="dropbtn dropbtn1">From <i class="fa fa-caret-down"></i></button>
-                <div id="Dropdown1" class="dropdown-content1">
-                    <button id="secondsIn">seconds</button>
-                    <button id="minutesIn">minutes</button>
-                    <button id="hoursIn">hours</button>
-                    <button id="daysIn">days</button>
-                    <button id="monthsIn">months</button>
-                    <button id="yearsIn">years</button>
-                </div>
-            </div>
-
-            <div class="option-output dropdown">
-                <button onclick="dropdown2()" class="dropbtn dropbtn2">To <i class="fa fa-caret-down"></i></button>
-                <div id="Dropdown2" class="dropdown-content2">
-                    <button id="secondsOut">seconds</button>
-                    <button id="minutesOut">mintutes</button>
-                    <button id="hoursOut">hours</button>
-                    <button id="daysOut">days</button>
-                    <button id="monthsOut">months</button>
-                    <button id="yearsOut">years</button>
-                </div>
-            </div>
+            <select id="inputUnit">
+                <option value="" disabled selected>From: </option>
+                <option value="seconds">seconds</option>
+                <option value="minutes">minutes</option>
+                <option value="hours">hours</option>
+                <option value="days">days</option>
+                <option value="months">months</option>
+                <option value="years">years</option>
+            </select>
+            <select id="outputUnit">
+                                <option value="" disabled selected>To: </option>
+                <option value="seconds">seconds</option>
+                <option value="minutes">minutes</option>
+                <option value="hours">hours</option>
+                <option value="days">days</option>
+                <option value="months">months</option>
+                <option value="years">years</option>
+            </select>
         </div>
 
 

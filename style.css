@@ -80,58 +80,16 @@ form {
     padding: 10px 4px 10px 10px;
 }
 
-
-/* dropdown button */
-
 .box-for-dropdown {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
 
-.dropbtn {
-    padding: 16px;
-    font-size: 16px;
+select {
     width: 134.4px;
-    border: solid 2px;
+    padding: 10px;
+    outline: none;
     cursor: pointer;
-    transition: background-color, box-shadow, 0.15s;
-}
-
-.fa {
-    transition: background-color 0.15s;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-    background-color: rgb(226, 210, 192);
-    box-shadow: 1px 1px 2px gray;
-}
-
-.dropbtn:hover>.fa,
-.dropbtn:focus>.fa {
-    background-color: rgb(226, 210, 192);
-}
-
-.dropdown-content1,
-.dropdown-content2 {
-    display: none;
-    position: absolute;
-    min-width: 134.4px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content1 button,
-.dropdown-content2 button {
-    color: black;
-    width: 100%;
-    padding: 8px 16px;
-    text-decoration: none;
-    display: block;
-    border: none;
-}
-
-.dropdown-content1 button:hover,
-.dropdown-content2 button:hover {
-    background-color: rgb(226, 210, 192);
+    font-size: 16px;
+    border: solid 2px;
 }
