@@ -1,21 +1,29 @@
 function dropdown1() {
-    document.getElementById("Dropdown1").classList.toggle("show");
+    if (document.querySelector('.dropdown-content1').style.display === 'block') {
+        document.querySelector('.dropdown-content1').style.display = 'none'
+    } else {
+        document.querySelector('.dropdown-content1').style.display = 'block'
+    }
 }
 
 function dropdown2() {
-    document.getElementById("Dropdown2").classList.toggle("show");
+    if (document.querySelector('.dropdown-content2').style.display === 'block') {
+        document.querySelector('.dropdown-content2').style.display = 'none'
+    } else {
+        document.querySelector('.dropdown-content2').style.display = 'block'
+    }
 }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+    if (!event.target.matches('.dropbtn1')) {
+        if (document.querySelector('.dropdown-content1').style.display === 'block') {
+            document.querySelector('.dropdown-content1').style.display = 'none'
+        }
+    }
+    if (!event.target.matches('.dropbtn2')) {
+        if (document.querySelector('.dropdown-content2').style.display === 'block') {
+            document.querySelector('.dropdown-content2').style.display = 'none'
         }
     }
 }
